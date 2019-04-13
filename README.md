@@ -198,14 +198,15 @@ $this->authorizeAction('show', $requestedObject);
 The following URL parameters are supported after installing this package:
 
 * ?include={relationship}: To add all relationship data to the response.
-* ?page={pageNumber}: To decide which page the pagination should show.
-* ?per_page={amountToShowPerPage}:To decide how many items you get per page.
+* ?page[number]={pageNumber}: To decide which page the pagination should show.
+* ?pege[sie]={amountToShowPerPage}:To decide how many items you get per page.
 * ?ids={commaSeperatedIds}: To retrieve a collection of objects belonging to the ids.
 * ?exclude_ids={commaSeperatedIds}: To retrieve a collection of objects not belonging to the ids.
 * ?lang={language}: (Requires the configure-locale middleware) to change the php locale to the desired language and automatically translates all translatable models.
 * ?fields={columns}: To retrieve certain columns.
 * ?order_by_desc={column}: To order descending based on a column.
 * ?order_by_asc={column}: To order ascending based on a column.
+* ?orderBy={column},{-column}: To order ascending/descending based on a columns.
 
 ### Mandatory middleware
 * inspect_content_type: Required. It ensures that the requests should be in json format. If it's in another format it throws a ContentTypeNotSupportedException.
