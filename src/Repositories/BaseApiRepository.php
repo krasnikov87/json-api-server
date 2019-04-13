@@ -16,6 +16,7 @@ abstract class BaseApiRepository implements RepositoryInterface
 
     const PAGE = 1;
     const PER_PAGE = 15;
+    const DESC_SORT_SYMBOL = '-';
 
     /** @var Model $model */
     protected $model;
@@ -38,6 +39,10 @@ abstract class BaseApiRepository implements RepositoryInterface
         $this->initQuery();
     }
 
+    /**
+     * @param array $parameters
+     * @return LengthAwarePaginator|EmptyPaginator
+     */
     public function paginate($parameters = [])
     {
         $this->initQuery();
@@ -80,6 +85,10 @@ abstract class BaseApiRepository implements RepositoryInterface
         return $this->model;
     }
 
+    /**
+     * @param array $data
+     * @return mixed
+     */
     public function create(array $data)
     {
         $data = array_map([$this, 'nullToEmptyString'], $data);
@@ -103,11 +112,18 @@ abstract class BaseApiRepository implements RepositoryInterface
         return $this->model;
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function destroy($id)
     {
         return $this->model->destroy($id);
     }
 
+    /**
+     * @return Model
+     */
     public function makeModel(): Model
     {
         $model = app()->make($this->getModelName());
@@ -163,6 +179,22 @@ abstract class BaseApiRepository implements RepositoryInterface
         $this->query->orderBy($this->parameters['order_by_asc']);
     }
 
+    public function orderBy()
+    {
+        if (!isset($this->parameters['orderBy'])) {
+            return;
+        }
+
+        $fields = explode(',', $this->parameters['orderBy']);
+        foreach ($fields as $field) {
+            if (mb_substr($field, 0, 1) == self::DESC_SORT_SYMBOL) {
+                $this->query->orderByDesc(substr($field, 1));
+                continue;
+            }
+            $this->query->orderByAsc($field);
+        }
+    }
+
     public function orderByDesc()
     {
         if (!isset($this->parameters['order_by_desc'])) {
@@ -209,11 +241,8 @@ abstract class BaseApiRepository implements RepositoryInterface
     public function setPagination()
     {
         if (isset($this->parameters['page'])) {
-            $this->page = $this->parameters['page'];
-        }
-
-        if (isset($this->parameters['per_page'])) {
-            $this->perPage = $this->parameters['per_page'];
+            $this->page = $this->parameters['page']['number'];
+            $this->perPage = $this->parameters['page']['size'];
         }
     }
 
