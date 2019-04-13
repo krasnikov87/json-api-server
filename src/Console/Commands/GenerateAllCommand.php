@@ -46,7 +46,6 @@ class GenerateAllCommand extends Command
             'model' => 'json-api-server:generate-model',
             'model-permissions' => 'json-api-server:generate-model-permissions',
             'repository' => 'json-api-server:generate-repository',
-            'translation' => 'json-api-server:generate-translation',
             'policy' => 'json-api-server:generate-policy',
             'test' => 'json-api-server:generate-test',
             'routes' => 'json-api-server:generate-routes',

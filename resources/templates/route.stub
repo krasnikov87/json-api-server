@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\$MODEL_NAME$Controller as Controller;
+use $NAMESPACE_CONTROLLER$\$MODEL_NAME$Controller as Controller;
 
 Route::prefix('$PLURAL_SNAKE_CASED_MODEL_NAME$')->middleware('auth:api')->group(function () {
     Route::get('', Controller::class . '@index');
