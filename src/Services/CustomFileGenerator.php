@@ -17,13 +17,14 @@ class CustomFileGenerator
             '$PLURAL_UPPER_CASED_MODEL_NAME$' => strtoupper(str_plural($this->modelName)),
             '$PLURAL_LOWER_CASED_MODEL_NAME$' => strtolower(str_plural($this->modelName)),
             '$UPPER_CASED_MODEL_NAME$' => strtoupper($this->modelName),
-            '$NAMESPACE_MODEL$' => config('laravel_api.namespace.model'),
-            '$NAME_SPACE_REPOSITORY$' => config('laravel_api.namespace.repository'),
-            '$NAME_SPACE_MODEL_PERMISSIONS$' => config('laravel_api.namespace.model_permissions'),
-            '$NAME_SPACE_POLICY$' => config('laravel_api.namespace.policy'),
-            '$NAMESPACE_REPOSITORY$' => config('laravel_api.namespace.repository'),
-            '$NAMESPACE_CONTROLLER$' => config('laravel_api.namespace.controller'),
-            '$NAMESPACE_AUTH_TEST$' => config('laravel_api.namespace.auth_test'),
+            '$NAMESPACE_MODEL$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.model')),
+            '$NAME_SPACE_REPOSITORY$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.repository')),
+            '$NAME_SPACE_MODEL_PERMISSIONS$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.model_permissions')),
+            '$NAME_SPACE_POLICY$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.policy')),
+            '$NAMESPACE_REPOSITORY$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.repository')),
+            '$NAMESPACE_CONTROLLER$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.controller')),
+            '$NAMESPACE_AUTH_TEST$' => str_replace('{MODEL_NAME}', ucfirst($this->modelName), config('laravel_api.namespace.auth_test')),
+            '$API_VERSION$' => config('app.api_version'),
         ];
 
         return $this;

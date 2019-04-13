@@ -5,37 +5,33 @@ return [
     'path' => [
         'model' => app_path('/'),
 
-        'model_permissions' => app_path('Permissions/'),
+        'model_permissions' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Permissions/'),
 
-        'translation' => app_path('Translations/'),
+        'controller' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Http/Controllers/Api/'),
 
-        'controller' => app_path('Http/Controllers/Api/'),
+        'repository' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Repositories/'),
 
-        'repository' => app_path('Repositories/'),
-
-        'policy' => app_path('Policies/'),
+        'policy' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Policies/'),
 
         'auth_test' => base_path('tests/Authentication/'),
 
         'templates' => 'vendor/swisnl/json-api-server/resources/templates/',
 
-        'routes' => app_path('Http/Routes/')
+        'routes' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Http/Routes/')
     ],
 
     'namespace' => [
-        'model' => 'App',
+        'model' => 'App\Domain\Api\\' . config('app.api_version', 'V1') .'\\{MODEL_NAME}',
 
-        'model_permissions' => 'App\Permissions',
+        'model_permissions' => 'App\Domain\Api\\' . config('app.api_version', 'V1') .'\\{MODEL_NAME}\Permissions',
 
-        'controller' => 'App\Http\Controllers\Api',
+        'controller' => 'App\Domain\Api\\' . config('app.api_version', 'V1') .'\\{MODEL_NAME}\Http\Controllers\Api',
 
-        'repository' => 'App\Repositories',
+        'repository' => 'App\Domain\Api\\' . config('app.api_version', 'V1') .'\\{MODEL_NAME}\Repositories',
 
-        'translation' => 'App\Translations',
+        'policy' => 'App\Domain\Api\\' . config('app.api_version', 'V1') .'\\{MODEL_NAME}\Policies',
 
-        'policy' => 'App\Policies',
-
-        'auth_test' => 'App\Tests\Authentication'
+        'auth_test' => 'App\Domain\Api\\' . config('app.api_version', 'V1') .'\\{MODEL_NAME}\Tests\Authentication'
     ],
 
     // Permissions configuration

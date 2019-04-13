@@ -3,12 +3,15 @@
 namespace $NAMESPACE_MODEL$;
 
 use Illuminate\Database\Eloquent\Model;
-use Dimsav\Translatable\Translatable;
+use Spatie\Translatable\HasTranslations;
+use Sofa\Eloquence\Eloquence;
+use Sofa\Eloquence\Mappable;
 
 class $MODEL_NAME$ extends Model
 {
-    use Translatable;
-    public $translationModel = '$MODEL_NAME$Translation';
+    use HasTranslations, Eloquence, Mappable {
+        HasTranslations::setAttribute insteadof Eloquence;
+    }
 
     public $fillable = [
         // TODO: Write down fillables
@@ -18,8 +21,12 @@ class $MODEL_NAME$ extends Model
             // TODO: Write down hidden
         ];
 
-    public $translatedAttributes = [
+    public $translatable = [
         // TODO: Write down translatable values
+    ];
+
+    protected $maps = [
+         // TODO: Write down fields map
     ];
 
     public function getRules($id = null): array
