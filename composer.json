@@ -75,7 +75,7 @@
     },
     "laravel": {
       "providers": [
-        "Swis\\JsonApi\\Server\\Providers\\LaravelApiServiceProvider"
+        "Krasnikov\\JsonApi\\Server\\Providers\\LaravelApiServiceProvider"
       ]
     }
   },
