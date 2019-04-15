@@ -8,7 +8,7 @@
 
 namespace Tests\Unit\Exceptions;
 
-use Swis\JsonApi\Server\Exceptions\ForbiddenException;
+use Krasnikov\JsonApi\Server\Exceptions\ForbiddenException;
 use Tests\TestCase;
 
 class ForbiddenExceptionTest extends TestCase

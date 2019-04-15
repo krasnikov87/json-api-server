@@ -2,10 +2,10 @@
 
 namespace Krasnikov\JsonApi\Server\Services;
 
-use Swis\JsonApi\Server\Exceptions\NotFoundException;
-use Swis\JsonApi\Server\Http\Resources\BaseApiCollectionResource;
-use Swis\JsonApi\Server\Http\Resources\BaseApiResource;
-use Swis\JsonApi\Server\Models\Responses\RespondError;
+use Krasnikov\JsonApi\Server\Exceptions\NotFoundException;
+use Krasnikov\JsonApi\Server\Http\Resources\BaseApiCollectionResource;
+use Krasnikov\JsonApi\Server\Http\Resources\BaseApiResource;
+use Krasnikov\JsonApi\Server\Models\Responses\RespondError;
 
 class ResponseService
 {

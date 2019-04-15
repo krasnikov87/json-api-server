@@ -3,8 +3,8 @@
 namespace Tests\Unit;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Swis\JsonApi\Server\Exceptions\NotFoundException;
-use Swis\JsonApi\Server\Paginators\EmptyPaginator;
+use Krasnikov\JsonApi\Server\Exceptions\NotFoundException;
+use Krasnikov\JsonApi\Server\Paginators\EmptyPaginator;
 use Tests\TestCase;
 use Tests\TestClasses\TestModel;
 use Tests\TestClasses\TestRepository;

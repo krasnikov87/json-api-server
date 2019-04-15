@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use Swis\JsonApi\Server\Console\Commands\BaseGenerateCommand;
-use Swis\JsonApi\Server\Services\CustomFileGenerator;
+use Krasnikov\JsonApi\Server\Console\Commands\BaseGenerateCommand;
+use Krasnikov\JsonApi\Server\Services\CustomFileGenerator;
 use Tests\TestCase;
 
 class CustomFileGeneratorTest extends TestCase

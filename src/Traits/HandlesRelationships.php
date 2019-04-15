@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Http\Resources\Json\ResourceCollection;
-use Swis\JsonApi\Server\Http\Resources\BaseApiResource;
+use Krasnikov\JsonApi\Server\Http\Resources\BaseApiResource;
 
 trait HandlesRelationships
 {

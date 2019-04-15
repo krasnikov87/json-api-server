@@ -3,7 +3,7 @@
 namespace $NAMESPACE_REPOSITORY$;
 
 use $NAMESPACE_MODEL$\$MODEL_NAME$;
-use Swis\JsonApi\Server\Repositories\BaseApiRepository;
+use Krasnikov\JsonApi\Server\Repositories\BaseApiRepository;
 
 class $MODEL_NAME$Repository extends BaseApiRepository
 {

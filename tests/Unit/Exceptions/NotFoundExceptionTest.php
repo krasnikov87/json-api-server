@@ -8,7 +8,7 @@
 
 namespace Tests\Unit\Exceptions;
 
-use Swis\JsonApi\Server\Exceptions\NotFoundException;
+use Krasnikov\JsonApi\Server\Exceptions\NotFoundException;
 use Tests\TestCase;
 
 class NotFoundExceptionTest extends TestCase

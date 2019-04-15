@@ -7,17 +7,17 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Swis\JsonApi\Server\Console\Commands\GenerateAllCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateApiControllerCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateAuthenticationTestCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateModelCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateModelPermissionsCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateModelTranslationCommand;
-use Swis\JsonApi\Server\Console\Commands\GeneratePolicyCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateRepositoryCommand;
-use Swis\JsonApi\Server\Console\Commands\GenerateRoutesCommand;
-use Swis\JsonApi\Server\Http\Middleware\ConfigureLocale;
-use Swis\JsonApi\Server\Http\Middleware\InspectContentType;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateAllCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateApiControllerCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateAuthenticationTestCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateModelCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateModelPermissionsCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateModelTranslationCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GeneratePolicyCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateRepositoryCommand;
+use Krasnikov\JsonApi\Server\Console\Commands\GenerateRoutesCommand;
+use Krasnikov\JsonApi\Server\Http\Middleware\ConfigureLocale;
+use Krasnikov\JsonApi\Server\Http\Middleware\InspectContentType;
 use Symfony\Component\Finder\Finder;
 
 class LaravelApiServiceProvider extends ServiceProvider
