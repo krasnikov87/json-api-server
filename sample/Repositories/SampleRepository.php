@@ -3,7 +3,7 @@
 namespace App\Repositories;
 
 use App\Sample;
-use Swis\JsonApi\Server\Repositories\BaseApiRepository;
+use Krasnikov\JsonApi\Server\Repositories\BaseApiRepository;
 
 class SampleRepository extends BaseApiRepository
 {

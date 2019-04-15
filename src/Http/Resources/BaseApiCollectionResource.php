@@ -4,7 +4,7 @@ namespace Krasnikov\JsonApi\Server\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
-use Swis\JsonApi\Server\Traits\HandlesRelationships;
+use Krasnikov\JsonApi\Server\Traits\HandlesRelationships;
 
 class BaseApiCollectionResource extends ResourceCollection
 {

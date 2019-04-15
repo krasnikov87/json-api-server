@@ -9,8 +9,8 @@
 namespace Krasnikov\JsonApi\Server\Exceptions;
 
 use Exception;
-use Swis\JsonApi\Server\Constants\HttpCodes;
-use Swis\JsonApi\Server\Traits\HandleResponses;
+use Krasnikov\JsonApi\Server\Constants\HttpCodes;
+use Krasnikov\JsonApi\Server\Traits\HandleResponses;
 
 abstract class JsonException extends Exception
 {

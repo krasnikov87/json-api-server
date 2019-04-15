@@ -4,7 +4,7 @@ namespace Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Swis\JsonApi\Server\Providers\LaravelApiServiceProvider;
+use Krasnikov\JsonApi\Server\Providers\LaravelApiServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

@@ -3,12 +3,12 @@
 namespace Tests\Unit;
 
 use Illuminate\Pagination\LengthAwarePaginator;
-use Swis\JsonApi\Server\Exceptions\NotFoundException;
-use Swis\JsonApi\Server\Models\Responses\RespondHttpForbidden;
-use Swis\JsonApi\Server\Models\Responses\RespondHttpNotFound;
-use Swis\JsonApi\Server\Models\Responses\RespondHttpUnauthorized;
-use Swis\JsonApi\Server\Services\ResponseService;
-use Swis\JsonApi\Server\Traits\HandleResponses;
+use Krasnikov\JsonApi\Server\Exceptions\NotFoundException;
+use Krasnikov\JsonApi\Server\Models\Responses\RespondHttpForbidden;
+use Krasnikov\JsonApi\Server\Models\Responses\RespondHttpNotFound;
+use Krasnikov\JsonApi\Server\Models\Responses\RespondHttpUnauthorized;
+use Krasnikov\JsonApi\Server\Services\ResponseService;
+use Krasnikov\JsonApi\Server\Traits\HandleResponses;
 use Tests\TestCase;
 use Tests\TestClasses\TestModel;
 

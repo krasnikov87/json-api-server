@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Swis\JsonApi\Server\Exceptions\NotFoundException;
-use Swis\JsonApi\Server\Paginators\EmptyPaginator;
-use Swis\JsonApi\Server\Traits\HandlesRelationships;
+use Krasnikov\JsonApi\Server\Exceptions\NotFoundException;
+use Krasnikov\JsonApi\Server\Paginators\EmptyPaginator;
+use Krasnikov\JsonApi\Server\Traits\HandlesRelationships;
 
 abstract class BaseApiRepository implements RepositoryInterface
 {

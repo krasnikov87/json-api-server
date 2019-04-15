@@ -2,7 +2,7 @@
 
 namespace Krasnikov\JsonApi\Server\Models\Responses;
 
-use Swis\JsonApi\Server\Constants\HttpCodes;
+use Krasnikov\JsonApi\Server\Constants\HttpCodes;
 
 class RespondHttpUnauthorized extends RespondError
 {

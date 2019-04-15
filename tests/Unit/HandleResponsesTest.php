@@ -8,7 +8,7 @@
 
 namespace Tests\Unit;
 
-use Swis\JsonApi\Server\Traits\HandleResponses;
+use Krasnikov\JsonApi\Server\Traits\HandleResponses;
 use Tests\TestCase;
 use Tests\TestClasses\TestModel;
 

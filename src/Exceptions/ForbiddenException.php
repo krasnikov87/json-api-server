@@ -2,7 +2,7 @@
 
 namespace Krasnikov\JsonApi\Server\Exceptions;
 
-use Swis\JsonApi\Server\Constants\HttpCodes;
+use Krasnikov\JsonApi\Server\Constants\HttpCodes;
 
 class ForbiddenException extends JsonException
 {

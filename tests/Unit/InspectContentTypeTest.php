@@ -9,8 +9,8 @@
 namespace Tests\Unit;
 
 use Illuminate\Http\Request;
-use Swis\JsonApi\Server\Exceptions\ContentTypeNotSupportedException;
-use Swis\JsonApi\Server\Http\Middleware\InspectContentType;
+use Krasnikov\JsonApi\Server\Exceptions\ContentTypeNotSupportedException;
+use Krasnikov\JsonApi\Server\Http\Middleware\InspectContentType;
 use Tests\TestCase;
 
 class InspectContentTypeTest extends TestCase

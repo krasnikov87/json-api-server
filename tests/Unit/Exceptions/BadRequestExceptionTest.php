@@ -8,7 +8,7 @@
 
 namespace Tests\Unit\Exceptions;
 
-use Swis\JsonApi\Server\Exceptions\BadRequestException;
+use Krasnikov\JsonApi\Server\Exceptions\BadRequestException;
 use Tests\TestCase;
 
 class BadRequestExceptionTest extends TestCase
