@@ -15,7 +15,7 @@ return [
 
         'auth_test' => base_path('tests/Authentication/'),
 
-        'templates' => 'vendor/swisnl/json-api-server/resources/templates/',
+        'templates' => 'vendor/krasnikov/json-api-server/resources/templates/',
 
         'routes' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Http/Routes/')
     ],

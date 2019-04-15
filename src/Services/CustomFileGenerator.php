@@ -56,7 +56,7 @@ class CustomFileGenerator
     public static function createFile($path, $classExtensionName, $filledStub)
     {
         if (!is_dir($path)) {
-            mkdir($path);
+            mkdir($path, 0777, true);
         }
 
         $path = $path.$classExtensionName;

@@ -45,7 +45,6 @@ class LaravelApiServiceProvider extends ServiceProvider
             GenerateAllCommand::class,
             GenerateApiControllerCommand::class,
             GenerateModelCommand::class,
-            GenerateModelTranslationCommand::class,
             GeneratePolicyCommand::class,
             GenerateRepositoryCommand::class,
             GenerateModelPermissionsCommand::class,
