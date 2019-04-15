@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Providers;
+namespace Krasnikov\JsonApi\Server\Providers;
 
 use Dimsav\Translatable\TranslatableServiceProvider;
 use Illuminate\Routing\Router;

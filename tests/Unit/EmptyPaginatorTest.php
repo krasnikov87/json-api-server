@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Paginators;
+namespace Krasnikov\JsonApi\Server\Paginators;
 
 use Tests\TestCase;
 

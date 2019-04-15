@@ -55,7 +55,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Swis\\JsonApi\\Server\\": "src/"
+      "Krasnikov\\JsonApi\\Server\\": "src/"
     }
   },
   "autoload-dev": {

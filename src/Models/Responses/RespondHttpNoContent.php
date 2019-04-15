@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Models\Responses;
+namespace Krasnikov\JsonApi\Server\Models\Responses;
 
 use Swis\JsonApi\Server\Constants\HttpCodes;
 

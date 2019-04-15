@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Traits;
+namespace Krasnikov\JsonApi\Server\Traits;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Http\Middleware;
+namespace Krasnikov\JsonApi\Server\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

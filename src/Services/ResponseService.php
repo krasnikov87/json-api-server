@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Services;
+namespace Krasnikov\JsonApi\Server\Services;
 
 use Swis\JsonApi\Server\Exceptions\NotFoundException;
 use Swis\JsonApi\Server\Http\Resources\BaseApiCollectionResource;

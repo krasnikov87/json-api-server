@@ -6,7 +6,7 @@
  * Time: 17:08.
  */
 
-namespace Swis\JsonApi\Server\Console\Commands;
+namespace Krasnikov\JsonApi\Server\Console\Commands;
 
 class GenerateRoutesCommand extends BaseGenerateCommand
 {
