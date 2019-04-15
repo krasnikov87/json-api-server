@@ -22,7 +22,7 @@ It already has the basic features an API should have, like:
 Via Composer
 
 ```bash
-$ composer require swisnl/json-api-server
+$ composer require krasnikov/json-api-server
 ```
 
 ### Sample
