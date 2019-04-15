@@ -81,7 +81,6 @@ $ php artisan json-api-server:generate-policy {name}
 $ php artisan json-api-server:generate-repository {name}
 $ php artisan json-api-server:generate-routes {name}
 $ php artisan json-api-server:generate-test {name}
-$ php artisan json-api-server:generate-translation {name}
 ```
 
 ### Configuration
