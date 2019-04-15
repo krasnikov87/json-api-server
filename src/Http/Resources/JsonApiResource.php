@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Http\Resources;
+namespace Krasnikov\JsonApi\Server\Http\Resources;
 
 class JsonApiResource
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Http\Controllers\Api;
+namespace Krasnikov\JsonApi\Server\Http\Controllers\Api;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Pagination\Paginator;

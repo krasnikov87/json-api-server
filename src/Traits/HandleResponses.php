@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Traits;
+namespace Krasnikov\JsonApi\Server\Traits;
 
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Model;

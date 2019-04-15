@@ -6,7 +6,7 @@
  * Time: 13:36.
  */
 
-namespace Swis\JsonApi\Server\Exceptions;
+namespace Krasnikov\JsonApi\Server\Exceptions;
 
 use Exception;
 use Swis\JsonApi\Server\Constants\HttpCodes;

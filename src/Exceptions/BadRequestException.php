@@ -6,7 +6,7 @@
  * Time: 15:03.
  */
 
-namespace Swis\JsonApi\Server\Exceptions;
+namespace Krasnikov\JsonApi\Server\Exceptions;
 
 class BadRequestException extends JsonException
 {

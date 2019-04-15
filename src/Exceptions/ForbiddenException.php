@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Exceptions;
+namespace Krasnikov\JsonApi\Server\Exceptions;
 
 use Swis\JsonApi\Server\Constants\HttpCodes;
 

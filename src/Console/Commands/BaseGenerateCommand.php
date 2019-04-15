@@ -1,6 +1,6 @@
 <?php
 
-namespace Swis\JsonApi\Server\Console\Commands;
+namespace Krasnikov\JsonApi\Server\Console\Commands;
 
 use Illuminate\Console\Command;
 use Swis\JsonApi\Server\Services\CustomFileGenerator;

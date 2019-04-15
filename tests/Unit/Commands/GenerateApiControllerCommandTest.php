@@ -6,7 +6,7 @@
  * Time: 13:27.
  */
 
-namespace Swis\JsonApi\Server\Console\Commands;
+namespace Krasnikov\JsonApi\Server\Console\Commands;
 
 use Tests\CommandTestCase;
 
