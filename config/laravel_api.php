@@ -3,7 +3,7 @@
 return [
     // Generator configuration
     'path' => [
-        'model' => app_path('/'),
+        'model' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Permissions/'),
 
         'model_permissions' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Permissions/'),
 
