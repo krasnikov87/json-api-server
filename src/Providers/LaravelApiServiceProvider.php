@@ -7,6 +7,7 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Krasnikov\EloquentJSON\Exceptions\Handler;
 use Krasnikov\JsonApi\Server\Console\Commands\GenerateAllCommand;
 use Krasnikov\JsonApi\Server\Console\Commands\GenerateApiControllerCommand;
 use Krasnikov\JsonApi\Server\Console\Commands\GenerateAuthenticationTestCommand;
@@ -19,6 +20,7 @@ use Krasnikov\JsonApi\Server\Console\Commands\GenerateRoutesCommand;
 use Krasnikov\JsonApi\Server\Http\Middleware\ConfigureLocale;
 use Krasnikov\JsonApi\Server\Http\Middleware\InspectContentType;
 use Symfony\Component\Finder\Finder;
+use Illuminate\Contracts\Debug\ExceptionHandler;
 
 class LaravelApiServiceProvider extends ServiceProvider
 {
@@ -40,6 +42,8 @@ class LaravelApiServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(TranslatableServiceProvider::class);
+        $this->app->singleton(ExceptionHandler::class, Handler::class);
+
 
         $this->commands([
             GenerateAllCommand::class,
