@@ -2,7 +2,7 @@
 build
 /public/storage
 /storage
-/vendor
+/packages/krasnikov/json-api-server/vendor
 /.idea
 /.vagrant
 Homestead.json
@@ -12,3 +12,4 @@ yarn-error.log
 .env
 composer.lock
 .php_cs.cache
+vendor

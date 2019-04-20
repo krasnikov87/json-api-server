@@ -1,6 +1,6 @@
 <?php
 
-namespace Krasnikov\EloquentJSON\Exceptions;
+namespace Krasnikov\JsonApi\Server\Exceptions;
 
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;

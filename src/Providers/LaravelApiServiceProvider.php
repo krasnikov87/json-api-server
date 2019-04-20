@@ -2,12 +2,11 @@
 
 namespace Krasnikov\JsonApi\Server\Providers;
 
-use Dimsav\Translatable\TranslatableServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Krasnikov\EloquentJSON\Exceptions\Handler;
+use Krasnikov\JsonApi\Server\Exceptions\Handler;
 use Krasnikov\JsonApi\Server\Console\Commands\GenerateAllCommand;
 use Krasnikov\JsonApi\Server\Console\Commands\GenerateApiControllerCommand;
 use Krasnikov\JsonApi\Server\Console\Commands\GenerateAuthenticationTestCommand;
@@ -30,18 +29,17 @@ class LaravelApiServiceProvider extends ServiceProvider
         $router->aliasMiddleware('inspect_content_type', InspectContentType::class);
 
         $this->publishes([
-            __DIR__.'/../../config/laravel_api.php' => base_path('config/laravel_api.php'),
+            __DIR__ . '/../../config/laravel_api.php' => base_path('config/laravel_api.php'),
         ], 'laravel-api');
 
         $this->publishes([
-            __DIR__.'/../../resources/templates' => base_path('resources/templates'),
+            __DIR__ . '/../../resources/templates' => base_path('resources/templates'),
         ], 'laravel-api-templates');
         $this->mapJsonApiRoutes();
     }
 
     public function register()
     {
-        $this->app->register(TranslatableServiceProvider::class);
         $this->app->singleton(ExceptionHandler::class, Handler::class);
 
 
@@ -57,7 +55,7 @@ class LaravelApiServiceProvider extends ServiceProvider
         ]);
 
         $this->mergeConfigFrom(
-            __DIR__.'/../../config/laravel_api.php',
+            __DIR__ . '/../../config/laravel_api.php',
             'laravel_api'
         );
     }
