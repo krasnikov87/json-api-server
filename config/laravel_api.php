@@ -3,7 +3,7 @@
 return [
     // Generator configuration
     'path' => [
-        'model' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Permissions/'),
+        'model' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Model/'),
 
         'model_permissions' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Permissions/'),
 
@@ -15,7 +15,7 @@ return [
 
         'auth_test' => base_path('tests/Authentication/'),
 
-        'templates' => 'vendor/krasnikov/json-api-server/resources/templates/',
+        'templates' => __DIR__ .'/../resources/templates/',
 
         'routes' => app_path('Domain/Api/' . config('app.api_version', 'V1') . '/{MODEL_NAME}/Http/Routes/')
     ],
