@@ -149,7 +149,7 @@ class BaseApiResource extends Resource
     protected function getLinks()
     {
         return [
-            'self' => env('API_URL').'/'.$this->getResourceType().'/'.$this->resource->getKey(),
+            'self' => config('app.api_url').'/'.$this->getResourceType().'/'.$this->resource->getKey(),
         ];
     }
 
