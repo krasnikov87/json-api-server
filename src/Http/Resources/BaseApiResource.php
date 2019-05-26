@@ -156,7 +156,7 @@ class BaseApiResource extends Resource
     protected function relationships()
     {
         $relationships = $this->getRelationships($this->resource);
-        $this->jsonApiModel->setAttributes($this->jsonApiModel->getAttributes() + ['available_relationships' => $relationships]);
+        $this->jsonApiModel->setAttributes($this->jsonApiModel->getAttributes() + ['availableRelationships' => $relationships]);
         $relationshipsIdentifiers = [];
 
         foreach ($relationships as $relationship) {
